@@ -1,6 +1,10 @@
 # sudoku
 Contains files of a sudoku game written in python.
 
-Pygame is used for graphics.
+Used external libraries:
+- pygame is used for graphics.
+- numpy is used for sudoku grid handling.
+- threading is used to handle multi-threading (background processes).
 
-Run game.py to play.
+How to play:
+  Run game.py to play.
