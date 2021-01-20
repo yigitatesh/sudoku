@@ -7,4 +7,4 @@ Used external libraries:
 - threading is used to handle multi-threading (background processes).
 
 How to play:
-  Run game.py to play.
+- Run game.py to play.
