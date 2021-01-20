@@ -1,5 +1,5 @@
 import pygame
-import sys
+import sys, os
 import numpy as np
 import random
 import threading
@@ -11,7 +11,7 @@ from button import SudokuButton
 
 ### GAME ###
 class Game(object):
-	"""Runs sudoku game."""
+    """Runs sudoku game."""
     ## Constants
     WIDTH = 800
     HEIGHT = 600
@@ -72,6 +72,7 @@ class Game(object):
     def exitProgram(self):
         pygame.quit()
         sys.exit()
+        #os._exit()
 
     ## defines sudoku area's and button's properties
     def sudokuArea(self):
@@ -555,9 +556,9 @@ class Game(object):
             self.screen.fill(self.CREAM)
             #texts
             if self.win:
-                self.textToScreen(self.WIDTH/2, self.HEIGHT/4, "KAA ZAANN DIIINN!", self.BLACK, self.medfont)
+                self.textToScreen(self.WIDTH/2, self.HEIGHT/4, "YOU WIN!", self.BLACK, self.medfont)
             else:
-                self.textToScreen(self.WIDTH/2, self.HEIGHT/4, "ÜZGÜNÜM KAYBETTiN.", self.BLACK, self.medfont)
+                self.textToScreen(self.WIDTH/2, self.HEIGHT/4, "YOU LOSE.", self.BLACK, self.medfont)
             #buttons
             self.replayButton.draw()
             self.mainMenuButton.draw()
