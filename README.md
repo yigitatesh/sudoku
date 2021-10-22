@@ -2,14 +2,17 @@
 Sudoku game capable of creating a sudoku gameboard from the ground up.
 
 # Requirements
-- pygame
-- numpy
-- threading
+- pygame (used for graphics)
+- numpy (used for handling sudoku algorithms)
+- threading (used to handle multi-threading for background processes)
 
 # How to Run
 Run game.py
 
-Used external libraries:
-- pygame is used for graphics.
-- numpy is used for sudoku grid handling.
-- threading is used to handle multi-threading (background processes).
+# Gameplay Images
+Start screen of the game. <br><br>
+<img src="https://raw.githubusercontent.com/yigitatesh/sudoku/main/img/sudoku_menu.PNG" width="700"/>
+
+Sudoku Playboard. <br><br>
+<img src="https://raw.githubusercontent.com/yigitatesh/sudoku/main/img/sudoku_game_screen.PNG" width="700"/>
+
